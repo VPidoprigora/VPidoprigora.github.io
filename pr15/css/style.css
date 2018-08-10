@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'Segoe';
+	src:url(../font/Segoe.ttf);
+}
+
+body {
+	color: #909090;
+	font-family: 'Segoe', sans-serif;
+}
+.container {
+	min-width: 320px;
+	max-width: 1024px;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.logo-img {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #5095F2;
+	vertical-align: middle;
+}
+.logo-text {
+	display: inline-block;
+	color: #000;
+	font-size: 50px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.mob-menu {
+	padding: 10px;
+	background-color: #5095F2;
+	width: 60px;
+	border-radius: 5px;
+}
+.mob-menu span {
+	display: block;
+	height: 5px;
+	background-color: #fff;
+	margin-bottom: 5px;
+}
+.mob-menu span:last-child {
+	margin-bottom: 0;
+}
+.header {
+	padding-top: 30px;
+	padding-bottom: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.header-menu a {
+	color: #909090;
+	text-decoration: none;
+}
+.header-menu li {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.nav {
+	flex-basis: 100%;
+	display: none;
+}
+.mob-menu {
+	display: block;
+	}
+.slider-bg {
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+.slide {
+	display: flex;
+}
+.slide-img {
+	flex-basis: 40%;
+}
+.slide-text {
+	flex-basis: 60%;
+}
+.slide-img img {
+	max-width: 100%;
+	height: auto;
+}
+.section-img {
+	width: 136px;
+	height: 136px;
+	border-radius: 50%;
+	flex-shrink: 0;
+}
+.section-img1 {
+	background-color: #5095F2;
+}
+.section-img2 {
+	background-color: #D94748;
+}
+.section-img3 {
+	background-color: #EBBB11;
+}
+.section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-basis: 33.333%;
+	flex-shrink: 0;
+}
+.info {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 968px){
+	.nav {
+	flex-basis: auto;	
+	display: block;
+	}
+	.mob-menu {
+	display: none;
+	}
+	.header-menu li {
+	display: inline-block;
+	margin-right: 35px;
+	}
+	.info {
+	flex-direction: row;
+	}
+	.section {
+	flex-direction: column;
+	}
+	.section-text {
+		text-align: center;
+	}
+}
